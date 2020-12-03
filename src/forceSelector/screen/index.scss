@@ -1,0 +1,142 @@
+.force-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  position: relative;
+
+  .btn-back {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    left: 50px;
+    font-size: 18px;
+    font-weight: 400;
+
+    img {
+      margin-top: 0;
+      width: 30px;
+      height: 25px;
+    }
+
+    p {
+      margin-left: 15px;
+    }
+  }
+
+  img {
+    border-radius: 100%;
+    margin-top: 90px;
+    max-width: 390px;
+  }
+
+  .content-force {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-selectforce {
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    &:disabled {
+      opacity: .5;
+    }
+  }
+
+  .text-div {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+    h3 {
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 44px;
+
+      &.strong {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &.darkside {
+    background-color: #2B2B2B;
+
+    .btn-selectforce {
+      background-color: #FFFFFF;
+      color: #2A2A2A;
+    }
+
+    .text-div {
+      color: #FFFFFF;
+    }
+
+    .btn-back {
+      color: #FFFFFF;
+    }
+  }
+
+  &.lightside {
+    background-color: #FBFE63;
+
+    .btn-selectforce {
+      background-color: #2A2A2A;
+      color: #FBFE63;
+    }
+
+    .text-div {
+      color: #2A2A2A;
+    }
+
+    .btn-back {
+      color: #2A2A2A;
+    }
+  }
+
+
+  @media (max-width: 800px) {
+
+    img {
+      margin-top: 25px;
+      max-width: 80%;
+    }
+
+    .text-div {
+      flex-direction: column;
+
+      h3 {
+        font-size: 28px;
+      }
+    }
+
+    .btn-selectforce {
+      font-size: 12px;
+      margin-top: 28px;
+    }
+  }
+
+}
+
+@media (max-width: 800px) {
+  .force-bg {
+    flex-direction: column-reverse;
+  }
+}
