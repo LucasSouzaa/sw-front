@@ -1,4 +1,6 @@
 ## Instalando projeto localmente
+Dependencias
+```Node v14.8.0```
 
 Clonar o repositorio
 ```git clone https://github.com/LucasSouzaa/sw-front.git```
